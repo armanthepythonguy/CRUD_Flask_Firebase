@@ -2,14 +2,18 @@ from flask import *
 import pyrebase
 
 config = {
-    "apiKey": "AIzaSyALCxfRrYr_yxnPZfHjhCfe__a9UevciqI",
-  "authDomain": "crud-72948.firebaseapp.com",
-  "projectId": "crud-72948",
-  "storageBucket": "crud-72948.appspot.com",
-  "messagingSenderId": "882396680681",
-  "appId": "1:882396680681:web:c02fc6163923d112347b78",
-  "databaseURL" : "https://crud-72948-default-rtdb.asia-southeast1.firebasedatabase.app/"
+    ## Your DB DATA HERE
 }
+
+'''B DATA LOOKS LIKE 
+"apiKey": "",
+  "authDomain": "",
+  "projectId": "",
+  "storageBucket": "",
+  "messagingSenderId": "",
+  "appId": "",
+  "databaseURL" : ""   
+'''
 
 firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
